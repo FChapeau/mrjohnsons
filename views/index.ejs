@@ -3,15 +3,13 @@
   <link rel="stylesheet" type="text/css" href="../static/css/site.css">
 </head>
     <body>
-        <div>
-            <h1>
-                This is a test!
-            </h1>
-        </div>
-        <div>
+      <header>
+        <img src="http://www.catalystgamelabs.com/images/SR_logo_ongreen.gif?053ad1"/>
+      </header>
+        <div class="allRun">
           <p>
-            The runners go to a meet <span id="location"></span> for their next job. They are hired by <span id="employers"></span> for <span id="jobType"></span>
-            job, targeting <span id="macguffin"></span>. The run gets complicated when <span id="twists"></span>.
+            The runners go to a meet <span class="runComponent" id="location"></span> for their next job. They are hired by <span class="runComponent" id="employers"></span> for <span id="jobType" class="runComponent"></span>
+            job, targeting <span class="runComponent" id="macguffin"></span>. The run gets complicated when <span class="runComponent" id="twists"></span>.
           </p>
           <input type="button" id="genBtn" value="Generate">
         </div>
@@ -24,7 +22,7 @@
             employers: ["a secret society", "a political group", "a government agency", "a minor corporation", "a criminal syndicate", "a magical group", "a private individual", "an exotic being"],
             jobType: ["a data steal", "an assassination", "a demolition", "an extraction", "an insertion", "a misdirection", "a protection", "a delivery"],
             macguffin: ["a key employee", "a prototype product", "cutting edge technology research", "a bioengineered life form", "a magical object", "an urban building", "a rural location"],
-            twists: [823, 23, 43, 12, 54]
+            twists: ["security is unexpectedly high", "a third party is also interested", "the target is not what is appears to be", "the job requires a rare piece of equipment", "target has moved", "the employer decides to double-cross them"]
           },
             generate:
                 function(component){
@@ -37,6 +35,21 @@
           runGenerator.generate("employers")
           runGenerator.generate("jobType");
           runGenerator.generate("macguffin");
+          runGenerator.generate("twists");
+        });
+        document.getElementById("location").addEventListener("click", function(){
+          runGenerator.generate("location");
+        });
+        document.getElementById("employers").addEventListener("click", function(){
+          runGenerator.generate("employers");
+        });
+        document.getElementById("jobType").addEventListener("click", function(){
+          runGenerator.generate("jobType");
+        });
+        document.getElementById("macguffin").addEventListener("click", function(){
+          runGenerator.generate("macguffin");
+        });
+        document.getElementById("twists").addEventListener("click", function(){
           runGenerator.generate("twists");
         });
 
