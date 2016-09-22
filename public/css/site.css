@@ -45,8 +45,13 @@ header{
   background-color: #3B3B3B;
   box-shadow: 2px 2px 4px #000000;
   width: 15%;
+  transition: box-shadow 0.2s;
+}
+.optionCard:hover{
+  box-shadow: 4px 4px 8px #000000;
 }
 .optionCard h2{
+  margin-top: 5px;
   color: rgb(235, 198, 46);
   text-shadow: 2px 2px 4px #000000;
 }
