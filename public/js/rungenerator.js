@@ -11,15 +11,18 @@ var runGenerator=
         function(component){
             var randomElement = Math.floor(Math.random() * this.runComponents[component].length);
             document.getElementById(component).innerHTML = this.runComponents[component][randomElement];
-        }
+        },
+    generateAll:
+    function(){
+        runGenerator.generate("location");
+        runGenerator.generate("employers")
+        runGenerator.generate("jobType");
+        runGenerator.generate("macguffin");
+        runGenerator.generate("twists");
+    }
 };
-document.getElementById("genBtn").addEventListener("click", function(){
-    runGenerator.generate("location");
-    runGenerator.generate("employers")
-    runGenerator.generate("jobType");
-    runGenerator.generate("macguffin");
-    runGenerator.generate("twists");
-});
+document.getElementById("genBtn").addEventListener("click", runGenerator.generateAll);
+
 document.getElementById("location").addEventListener("click", function(){
     runGenerator.generate("location");
 });
@@ -35,3 +38,5 @@ document.getElementById("macguffin").addEventListener("click", function(){
 document.getElementById("twists").addEventListener("click", function(){
     runGenerator.generate("twists");
 });
+
+runGenerator.generateAll();
