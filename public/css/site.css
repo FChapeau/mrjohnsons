@@ -5,24 +5,48 @@ body {
 }
 
 .runComponent {
-  background-color : rgba(51, 153, 255, 0.1);
+  background-color : #C48686;
   transition: background-color 0.2s;
 }
 
 .runComponent:hover{
-background-color : rgba(51, 153, 255, 0.4)
+background-color : #B53131;
 }
 
 .allRun {
-  padding: 5%;
+  padding: 2%;
+  margin: 2% 1% 0 1%;
+  background-color: #3B3B3B;
+  box-shadow: 2px 2px 4px #000000;
 }
 .allRun p{
-
+  padding: 2% 5% 2% 2%;
+  background-color: #919191;
+  box-shadow: 2px 2px 4px #000000;
+}
+.allRun h1{
+  padding-left: 2%;
+  color: rgb(235, 198, 46);
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0 0 0 0;
 }
 
 header{
   background-color: #595959;
   width: 100%;
   margin: 0, 0, 0, 0;
-  box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.optionCard{
+  margin: 1%;
+  display: inline-block;
+  padding: 1% 1% 1% 1%;
+  background-color: #3B3B3B;
+  box-shadow: 2px 2px 4px #000000;
+  width: 15%;
+}
+.optionCard h2{
+  color: rgb(235, 198, 46);
+  text-shadow: 2px 2px 4px #000000;
 }

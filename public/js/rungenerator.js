@@ -23,19 +23,19 @@ var runGenerator=
 };
 document.getElementById("genBtn").addEventListener("click", runGenerator.generateAll);
 
-document.getElementById("location").addEventListener("click", function(){
+document.getElementById("chgLocation").addEventListener("click", function(){
     runGenerator.generate("location");
 });
-document.getElementById("employers").addEventListener("click", function(){
+document.getElementById("chgEmployer").addEventListener("click", function(){
     runGenerator.generate("employers");
 });
-document.getElementById("jobType").addEventListener("click", function(){
+document.getElementById("chgJob").addEventListener("click", function(){
     runGenerator.generate("jobType");
 });
-document.getElementById("macguffin").addEventListener("click", function(){
+document.getElementById("chgMcguffin").addEventListener("click", function(){
     runGenerator.generate("macguffin");
 });
-document.getElementById("twists").addEventListener("click", function(){
+document.getElementById("chgTwist").addEventListener("click", function(){
     runGenerator.generate("twists");
 });
 
