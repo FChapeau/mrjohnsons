@@ -15,10 +15,11 @@ var runGenerator=
     generateAll:
     function(){
         runGenerator.generate("location");
-        runGenerator.generate("employers")
+        runGenerator.generate("employers");
         runGenerator.generate("jobType");
         runGenerator.generate("macguffin");
         runGenerator.generate("twists");
+//generateAll doesn't change card, dunno why
     }
 };
 document.getElementById("genBtn").addEventListener("click", runGenerator.generateAll);
