@@ -1,13 +1,46 @@
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/css/site.css">
+</head>
     <body>
         <div>
             <h1>
                 This is a test!
-
             </h1>
-            <% for (var i = 0; i < 10; i++){%>
-            <div>Loop test <%= i%></div>
-            <%}%>
         </div>
+        <div>
+          <p>
+            The runners go to a meet <span id="location"></span> for their next job. They are hired by <span id="employers"></span> for <span id="jobType"></span>
+            job, targeting <span id="macguffin"></span>. The run gets complicated when <span id="twists"></span>.
+          </p>
+          <input type="button" id="genBtn" value="Generate">
+        </div>
+
+        <script type="text/javascript">
+        var runGenerator=
+        {
+          runComponents : {
+            location: ["at a bar", "at a warehouse", "in the barren district", "in a matrix host", "in a moving vehicule", "in astral plane"],
+            employers: ["a secret society", "a political group", "a government agency", "a minor corporation", "a criminal syndicate", "a magical group", "a private individual", "an exotic being"],
+            jobType: ["a data steal", "an assassination", "a demolition", "an extraction", "an insertion", "a misdirection", "a protection", "a delivery"],
+            macguffin: ["a key employee", "a prototype product", "cutting edge technology research", "a bioengineered life form", "a magical object", "an urban building", "a rural location"],
+            twists: [823, 23, 43, 12, 54]
+          },
+            generate:
+                function(component){
+                    var randomElement = Math.floor(Math.random() * this.runComponents[component].length);
+                    document.getElementById(component).innerHTML = this.runComponents[component][randomElement];
+                   }
+        }
+        document.getElementById("genBtn").addEventListener("click", function(){
+          runGenerator.generate("location");
+          runGenerator.generate("employers")
+          runGenerator.generate("jobType");
+          runGenerator.generate("macguffin");
+          runGenerator.generate("twists");
+        });
+
+
+        </script>
     </body>
 </html>
