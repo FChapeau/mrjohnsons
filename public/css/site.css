@@ -1,3 +1,28 @@
 body {
-  padding: 0 5% 0 5%;
+  background-color: rgb(196, 196, 196);
+  font-family: Impact, Charcoal, sans-serif;
+  margin: 0 0 0 0;
+}
+
+.runComponent {
+  background-color : rgba(51, 153, 255, 0.1);
+  transition: background-color 0.2s;
+}
+
+.runComponent:hover{
+background-color : rgba(51, 153, 255, 0.4)
+}
+
+.allRun {
+  padding: 5%;
+}
+.allRun p{
+
+}
+
+header{
+  background-color: #595959;
+  width: 100%;
+  margin: 0, 0, 0, 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
