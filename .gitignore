@@ -84,3 +84,6 @@ crashlytics-build.properties
 fabric.properties
 
 *.sqlite
+
+# System files
+.DS_Store
