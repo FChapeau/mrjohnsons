@@ -50,6 +50,9 @@ header{
 .optionCard:hover{
   box-shadow: 4px 4px 8px #000000;
 }
+.optionCard:active{
+  background-color: #878787;
+}
 .optionCard h2{
   margin-top: 5px;
   color: rgb(235, 198, 46);
