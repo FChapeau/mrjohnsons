@@ -16,7 +16,7 @@ background-color : #B53131;
 .allRun {
   padding: 2%;
   margin: 2% 1% 0 1%;
-  background-color: #3B3B3B;
+  background-image; 
   box-shadow: 2px 2px 4px #000000;
 }
 .allRun p{
@@ -46,6 +46,9 @@ header{
   box-shadow: 2px 2px 4px #000000;
   width: 15%;
   transition: box-shadow 0.2s;
+  height: 10%;
+  position: static;
+  overflow: hidden;
 }
 .optionCard:hover{
   box-shadow: 4px 4px 8px #000000;
