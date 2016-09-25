@@ -12,7 +12,9 @@ header{
 }
 nav{
   background-color: #e7be0d;
-  height: 10%;
+  height: 50px;
+  margin: 0 0 0 0;
+  box-shadow: 2px 2px 4px #000000;
 }
 button{
   background-image: url(/../images/dicebtn.svg);
@@ -28,10 +30,29 @@ button:hover{
 }
 button:focus{
   outline: 0;
-
+}
+footer{
+  width: 100%;
+  clear: both;
+}
+.menuCard{
+  margin: 1%;
+  padding: 15px;
+  background-color: #3B3B3B;
+  box-shadow: 2px 2px 4px #000000;
+  width: 80px;
+  transition: box-shadow 0.2s;
+  height: 10%;
+  overflow: hidden;;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+.cardContainer{
+  width: 100%;
 }
 .headLogo{
-  height: 10%;
+  height: 100px;
   padding: 1% 0 1% 1%;
 }
 .srLogo{
@@ -74,16 +95,16 @@ background-color : #B53131;
 
 .optionCard{
   margin: 1%;
-  padding: 1% 1% 1% 1%;
+  padding: 15px;
   background-color: #3B3B3B;
   box-shadow: 2px 2px 4px #000000;
-  width: 15%;
+  width: 150px;
   transition: box-shadow 0.2s;
-  transition: background-color 0.08s;
   height: 10%;
   overflow: hidden;;
   float: left;
   cursor: pointer;
+  position: relative;
 }
 .optionCard p{
   padding: 2% 5% 2% 2%;
@@ -95,6 +116,7 @@ background-color : #B53131;
 
 .optionCard:hover{
   box-shadow: 4px 4px 8px #000000;
+  transition: background-color 0.08s;
 }
 .optionCard:active{
   background-color: #878787;
