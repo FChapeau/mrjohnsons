@@ -4,6 +4,40 @@ body {
   margin: 0 0 0 0;
 }
 
+header{
+  background-color: #595959;
+  width: 100%;
+  margin: 0, 0, 0, 0;
+  box-shadow: 2px 2px 4px #000000;
+}
+nav{
+  background-color: #e7be0d;
+  height: 10%;
+}
+button{
+  background-image: url(/../images/dicebtn.svg);
+  width: 40px;
+  height: 40px;
+  border: none;
+  box-shadow: 2px 2px 4px #000000;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 4px 4px 8px #000000;
+}
+button:focus{
+  outline: 0;
+
+}
+.headLogo{
+  height: 10%;
+  padding: 1% 0 1% 1%;
+}
+.srLogo{
+  height:10%;
+  width: 10%;
+}
 .runComponent {
   background-color : #C48686;
   transition: background-color 0.2s;
@@ -14,15 +48,21 @@ background-color : #B53131;
 }
 
 .allRun {
-  padding: 2%;
+  padding: 2% 2% 1% 2%;
   margin: 2% 1% 0 1%;
-  background-image; 
+  background-color: #3B3B3B;
   box-shadow: 2px 2px 4px #000000;
+}
+.allRun h1{
+  margin-left: 0;
+  padding-left: 0;
 }
 .allRun p{
   padding: 2% 5% 2% 2%;
   background-color: #919191;
   box-shadow: 2px 2px 4px #000000;
+  overflow: hidden;
+  height: 3%;
 }
 .allRun h1{
   padding-left: 2%;
@@ -31,25 +71,28 @@ background-color : #B53131;
   margin: 0 0 0 0;
 }
 
-header{
-  background-color: #595959;
-  width: 100%;
-  margin: 0, 0, 0, 0;
-  box-shadow: 2px 2px 4px #000000;
-}
 
 .optionCard{
   margin: 1%;
-  display: inline-block;
   padding: 1% 1% 1% 1%;
   background-color: #3B3B3B;
   box-shadow: 2px 2px 4px #000000;
   width: 15%;
   transition: box-shadow 0.2s;
+  transition: background-color 0.08s;
   height: 10%;
-  position: static;
-  overflow: hidden;
+  overflow: hidden;;
+  float: left;
+  cursor: pointer;
 }
+.optionCard p{
+  padding: 2% 5% 2% 2%;
+  background-color: #919191;
+  box-shadow: 2px 2px 4px #000000;
+  overflow: hidden;
+  height: 40%;
+}
+
 .optionCard:hover{
   box-shadow: 4px 4px 8px #000000;
 }

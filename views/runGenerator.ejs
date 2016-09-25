@@ -4,15 +4,18 @@
 </head>
     <body>
       <header>
-        <img src="http://www.catalystgamelabs.com/images/SR_logo_ongreen.gif?053ad1"/>
+        <img class="headLogo"src="../images/logo.svg"/>
       </header>
+      <nav>
+        <p>stff menu</nav>
+      </nav>
         <div class="allRun">
           <h1>The run so far...</h1>
           <p>
             The runners go to a meet <span class="runComponent" id="location"></span> for their next job. They are hired by <span class="runComponent" id="employer"></span> for <span id="jobType" class="runComponent"></span>
             job, targeting <span class="runComponent" id="macguffin"></span>. The run gets complicated when <span class="runComponent" id="twist"></span>.
           </p>
-          <input type="button" id="genBtn" value="Generate">
+          <button class="randomize" id="genBtn" value="Generate"></button>
         </div>
         <div class="optionCard" id="chgLocation">
           <h2>The location...</h2>
@@ -27,13 +30,17 @@
             <p id="jobTypeCard"></p>
         </div>
         <div class="optionCard" id="chgMcguffin">
-          <h2>The mcguffin...</h2>
+          <h2>The macguffin...</h2>
             <p id="macguffinCard"></p>
         </div>
         <div class="optionCard" id="chgTwist">
           <h2>The twist...</h2>
             <p id="twistCard"></p>
         </div>
+
+      <footer>
+        <img class="srLogo" src="../images/srlogo.svg"/>
+      </footer>
 
         <!--I moved your javascript code to the rungenerator.js file -Chapeau -->
         <script type="text/javascript" src="../js/rungenerator.js"></script>
