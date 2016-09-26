@@ -12,8 +12,14 @@ var runGenerator=
         function(component){
             var randomElement = Math.floor(Math.random() * this.runComponents[component].length);
             var cardId = component + "Card";
-              document.getElementById(component).innerHTML = this.runComponents[component][randomElement];
-              document.getElementById(cardId).innerHTML= this.runComponents[component][randomElement];
+            var selectedElement = this.runComponents[component][randomElement];
+              if(document.getElementById(component).innerHTML != selectedElement){
+                  document.getElementById(component).innerHTML = selectedElement;
+                  document.getElementById(cardId).innerHTML= selectedElement;
+              }
+              else{
+                runGenerator.generate(component);
+              }
         },
     generateAll:
     function(){
