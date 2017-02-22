@@ -87,3 +87,5 @@ fabric.properties
 
 # System files
 .DS_Store
+
+/public/dist/**/*
